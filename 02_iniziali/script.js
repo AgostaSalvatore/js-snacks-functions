@@ -11,7 +11,10 @@ function createNewArray(list){
         const firstLetter = element.charAt(0);
         newArray.push(firstLetter);
     }
+    return newArray;
 }
 // Invoca la funzione qui e stampa il risultato in console
 
+const result = createNewArray(names);
+console.log(result);
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
