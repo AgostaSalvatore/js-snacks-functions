@@ -11,7 +11,19 @@ const name = 'Mario';
 // Dichiara la funzione qui.
 
 const getGreeting = (name) => {
-   
+    const d = new Date();
+    const h = d.getHours();
+    let greeting;
+
+    if (h < 13) {
+        greeting = 'Buongiorno';
+    } else if (h < 17) {
+        greeting = 'Buon pomeriggio';
+    } else {
+        greeting = 'Buonasera';
+    }
+
+    return `${greeting} ${name}.`;
 }
 
 
