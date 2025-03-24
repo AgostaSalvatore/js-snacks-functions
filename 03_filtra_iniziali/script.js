@@ -6,6 +6,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 // Dichiara la funzione qui.
 function firstLetterArrow(array, letter){
     const newArray = [];
+    for (let i = 0; i < array.length; i++){
+        if(array[i].startsWith(letter)){
+            newArray.push(array[i]);
+        }
+    }
+
+    return newArray;
 }
 
 
