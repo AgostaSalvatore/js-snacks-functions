@@ -19,7 +19,8 @@ function volwesCount(word){
     }
 }
 // Invoca la funzione qui e stampa il risultato in console
-
+let result = countVowels(word);
+console.log(result);
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
