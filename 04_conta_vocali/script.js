@@ -4,9 +4,11 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
-
+const volwes = ['a', 'e', 'i', 'o', 'u'];
+let count = 0;
 
 // Invoca la funzione qui e stampa il risultato in console
+let result = countVowels(word);
 
 
 
