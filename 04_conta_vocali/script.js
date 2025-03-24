@@ -5,21 +5,31 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 
-const volwes = ['a', 'e', 'i', 'o', 'u'];
 
-function volwesCount(word){
+function howManyVowels(word) {
+
+    const volwes = ['a','e','i','o','u'];
+
     let count = 0;
-    function countVowels(word){
-        for (let i = 0; i < word.length; i++){
-            if(volwes.includes(word[i])){
+    let foundVowels = [];
+    for (let i = 0; i < word.length; i++) {
+
+        for (let index = 0; index < volwes.length; index++) {
+
+            if (word[i]=== volwes[index]){
+                foundVowels.push(word[i]);
                 count++;
             }
         }
-        return count;
     }
+
+    console.log('Found vowels:', foundVowels);
+    return count;
 }
+
 // Invoca la funzione qui e stampa il risultato in console
-let result = countVowels(word);
+
+const result = howManyVowels(word);
 console.log(result);
 
 
