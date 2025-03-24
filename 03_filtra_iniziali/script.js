@@ -18,6 +18,7 @@ function firstLetterArrow(array, letter){
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+const result = firstLetterArrow(names, 'A');
+console.log(result);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
