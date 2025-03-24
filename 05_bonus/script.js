@@ -28,7 +28,7 @@ const getGreeting = (name) => {
 
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(getGreeting(name));
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
